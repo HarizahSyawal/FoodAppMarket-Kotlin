@@ -1,0 +1,11 @@
+{
+    "require": {
+        "sentry/sentry-laravel": "^3.6",
+        "laravel/jetstream": "^3.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
