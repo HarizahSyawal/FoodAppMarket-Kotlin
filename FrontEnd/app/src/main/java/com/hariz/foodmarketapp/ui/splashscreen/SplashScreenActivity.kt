@@ -4,9 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.os.Looper
-import com.hariz.foodmarketapp.MainActivity
 import com.hariz.foodmarketapp.R
+import com.hariz.foodmarketapp.ui.auth.AuthActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         Handler().postDelayed(Runnable { //This method will be executed once the timer is over
             // Start your app main activity
-            val i = Intent(this@SplashScreenActivity, MainActivity::class.java)
+            val i = Intent(this@SplashScreenActivity, AuthActivity::class.java)
             startActivity(i)
             // close this activity
             finish()

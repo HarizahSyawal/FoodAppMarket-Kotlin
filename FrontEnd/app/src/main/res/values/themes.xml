@@ -1,12 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FoodMarketApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.FoodMarketApp" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="Theme.FoodMarketApp.noActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.FoodMarketApp.noActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
     </style>
 
     <style name="Theme.FoodMarketApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
