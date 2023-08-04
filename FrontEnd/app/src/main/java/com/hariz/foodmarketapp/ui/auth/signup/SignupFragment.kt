@@ -9,7 +9,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.hariz.foodmarketapp.R
-import com.hariz.foodmarketapp.databinding.FragmentSigninBinding
 import com.hariz.foodmarketapp.databinding.FragmentSignupBinding
 import com.hariz.foodmarketapp.ui.auth.AuthActivity
 
@@ -25,7 +24,8 @@ class SignupFragment : Fragment() {
         // Set the click listener using data binding
         binding.btnContinue.setOnClickListener {
             Navigation.findNavController(it)
-                .navigate(R.id.fragmentSignUpAdress, null)
+                .navigate(R.id.action_signup_address, null)
+            (activity as AuthActivity).toolbarSignUpAddress()
         }
 
         return binding.root

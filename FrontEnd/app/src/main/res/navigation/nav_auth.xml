@@ -8,25 +8,25 @@
     <fragment android:id="@+id/fragmentSignIn"
         android:name="com.hariz.foodmarketapp.ui.auth.signin.SigninFragment"
         tools:layout="@layout/fragment_signin">
-        <action
-            android:id="@+id/action_fragmentSignIn_to_fragmentSignUp"
-            app:destination="@id/fragmentSignUp" />
+
+        <action android:id="@+id/action_signup"
+            app:destination="@id/fragmentSignUp"/>
     </fragment>
 
     <fragment android:id="@+id/fragmentSignUp"
         android:name="com.hariz.foodmarketapp.ui.auth.signup.SignupFragment"
         tools:layout="@layout/fragment_signup">
-        <action
-            android:id="@+id/action_fragmentSignUp_to_fragmentSignUpAdress"
-            app:destination="@id/fragmentSignUpAdress" />
+
+        <action android:id="@+id/action_signup_address"
+            app:destination="@id/fragmentSignUpAdress"/>
     </fragment>
 
     <fragment android:id="@+id/fragmentSignUpAdress"
         android:name="com.hariz.foodmarketapp.ui.auth.signup.SignupAddressFragment"
         tools:layout="@layout/fragment_signup_address">
-        <action
-            android:id="@+id/action_fragmentSignUpAdress_to_fragmentSignUpSuccess"
-            app:destination="@id/fragmentSignUpSuccess" />
+
+        <action android:id="@+id/action_signup_success"
+            app:destination="@id/fragmentSignUpSuccess"/>
     </fragment>
 
     <fragment android:id="@+id/fragmentSignUpSuccess"
