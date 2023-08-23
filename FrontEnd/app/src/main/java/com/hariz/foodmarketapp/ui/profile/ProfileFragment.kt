@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.hariz.foodmarketapp.R
-import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.tabLayout
 import kotlinx.android.synthetic.main.fragment_profile.viewPager
 
@@ -25,11 +24,11 @@ class ProfileFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-//        val sectionPagerAdapter = SectionPagerAdapter(
-//            childFragmentManager
-//        )
-//        viewPager.adapter = sectionPagerAdapter
-//        tabLayout.setupWithViewPager(viewPager)
+        val sectionPagerAdapter = SectionPagerAdapter(
+            childFragmentManager
+        )
+        viewPager.adapter = sectionPagerAdapter
+        tabLayout.setupWithViewPager(viewPager)
 //
 //        var user = FoodMarket.getApp().getUser()
 //        var userResponse = Gson().fromJson(user, User::class.java)
