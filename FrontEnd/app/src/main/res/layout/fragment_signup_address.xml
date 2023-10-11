@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF"
@@ -19,13 +20,13 @@
 
     <EditText
         android:id="@+id/etPhonenum"
-        android:layout_marginTop="6dp"
-        android:padding="10dp"
         style="@style/EditText.PoppinsNormal14sp8D92A3"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:background="@drawable/shape_rectangle_outline_8_020202"
         android:hint="Type your phone number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:padding="10dp" />
 
     <TextView
         android:layout_marginTop="16dp"
@@ -53,7 +54,6 @@
 
     <EditText
         android:id="@+id/etHousenum"
-        android:inputType="textPassword"
         android:padding="10dp"
         style="@style/EditText.PoppinsNormal14sp8D92A3"
         android:background="@drawable/shape_rectangle_outline_8_020202"
